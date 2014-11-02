@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/valerio/Progetti/mobile-packages/examples/solomo'
+let g:netrw_dirhist_2='/home/valerio/Progetti/mobile-packages/examples/solomo/.meteor'
+let g:netrw_dirhist_3='/home/valerio/Progetti/mobile-packages/examples/solomo'
+let g:netrw_dirhist_4='/home/valerio/Progetti/mobile-packages/examples/solomo/.meteor'
+let g:netrw_dirhist_5='/home/valerio/Progetti/mobile-packages/examples/solomo/packages/google-maps'
