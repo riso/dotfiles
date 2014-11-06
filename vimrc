@@ -15,13 +15,15 @@ set autoread
 set cmdheight=2
 set shell=/bin/bash
 set hlsearch
-colo desert
+set background=dark
+colorscheme solarized
 set ve=all
 set wrap
 set bs=2
 set autoread
 
 map <F7> mzgg=G`z<CR>
+noremap <F3> :Autoformat<CR><CR>
 
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
