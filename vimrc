@@ -23,9 +23,16 @@ set bs=2
 set autoread
 
 map <F7> mzgg=G`z<CR>
+call togglebg#map("<F5>")
 noremap <F3> :Autoformat<CR><CR>
 
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+"" push current line up or down
+nnoremap <C-S-Up> ddkP
+nnoremap <C-S-Down> ddp
+nnoremap <C-S-Right> dawwPb
+nnoremap <C-S-Left> dawbPb
 
 map tt <c-]>
 
