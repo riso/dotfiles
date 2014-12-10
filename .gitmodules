@@ -40,3 +40,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/vim-spacebar"]
+	path = bundle/vim-spacebar
+	url = https://github.com/Slava/vim-spacebars.git
