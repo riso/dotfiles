@@ -47,7 +47,7 @@ ZSH_TMUX_AUTOSTART=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(command-not-found common-aliases zsh-syntax-highlighting tmux)
+plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux)
 
 source $ZSH/oh-my-zsh.sh
 
