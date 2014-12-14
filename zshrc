@@ -50,7 +50,7 @@ ZSH_TMUX_FIXTERM_WITHOUT_256COLOR="screen-256color"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux)
+plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
