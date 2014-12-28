@@ -43,3 +43,6 @@
 [submodule "bundle/vim-spacebar"]
 	path = bundle/vim-spacebar
 	url = https://github.com/Slava/vim-spacebars.git
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
