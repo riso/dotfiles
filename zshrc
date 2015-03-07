@@ -1,12 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="muse-custom"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -46,17 +40,24 @@ ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
 # we need to force 256 colors because gnome-terminal is reported as an 8 colors terminal
 ZSH_TMUX_FIXTERM_WITHOUT_256COLOR="screen-256color"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found common-aliases fasd meteor npm sudo zsh-syntax-highlighting svn-fast-info tmux)
+if [ `uname -o` = "Cygwin" ]
+then
+	ZSH_THEME="muse-custom-cygwin"
+	plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux ssh-agent)
+	source $ZSH/oh-my-zsh.sh
+	eval $(dircolors ~/.vim/dircolors.256dark)
+else
+	ZSH_THEME="muse-custom"
+	plugins=(git command-not-found common-aliases fasd meteor npm sudo zsh-syntax-highlighting svn-fast-info tmux)
+	source $ZSH/oh-my-zsh.sh
+	export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin"
+fi
 
-source $ZSH/oh-my-zsh.sh
+
+
 
 # User configuration
 
-export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
