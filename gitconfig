@@ -1,0 +1,9 @@
+[user]
+	email = valerio.ponte@gmail.com
+	name = Valerio Ponte\n
+[init]
+	templatedir = ~/.git_template
+[push]
+	default = simple
+[core]
+	excludesfile = /home/valerio/.gitignore_global
