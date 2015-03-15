@@ -1,8 +1,13 @@
 " To disable a plugin, add it's bundle name to the following list
 let g:pathogen_disabled = []
 
-" for some reason the csscolor plugin is very slow when run on the terminal
-" but not in GVim, so disable it if no GUI is running
+" disable Autoformat and airline if vim is too old
+if (v:version < 703)
+    call add(g:pathogen_disabled, 'vim-airline')
+    call add(g:pathogen_disabled, 'vim-airline')
+endif
+
+" disable neocomplete if there is no lua or vim is old
 if !has('lua') || !(v:version > 703 || (v:version == 703 && has('patch885')))
     call add(g:pathogen_disabled, 'neocomplete.vim')
 endif
