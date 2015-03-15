@@ -1,6 +1,11 @@
 " To disable a plugin, add it's bundle name to the following list
 let g:pathogen_disabled = []
 
+" disable Tagbar if vim is too old
+if (v:version < 700) || (v:version == 700 && !has('patch167'))
+    call add(g:pathogen_disabled, 'tagbar')
+endif
+
 " disable Autoformat and airline if vim is too old
 if (v:version < 703)
     call add(g:pathogen_disabled, 'vim-airline')
