@@ -4,7 +4,7 @@ let g:pathogen_disabled = []
 " disable Autoformat and airline if vim is too old
 if (v:version < 703)
     call add(g:pathogen_disabled, 'vim-airline')
-    call add(g:pathogen_disabled, 'vim-airline')
+    call add(g:pathogen_disabled, 'vim-autoformat')
 endif
 
 " disable neocomplete if there is no lua or vim is old
