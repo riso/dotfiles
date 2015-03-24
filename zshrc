@@ -41,7 +41,8 @@ if [ `uname -o` = "Cygwin" ]
 then
 	ZSH_THEME="muse-custom-cygwin"
 	ZSH_CUSTOM=$HOME/.vim/custom
-	plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux ssh-agent)
+	plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux)
+	export SSH_AUTH_SOCK="/cygdrive/c/cygwin64/ssh-socket"
 	source $ZSH/oh-my-zsh.sh
 	eval $(dircolors ~/.vim/dircolors.256dark)
 else
