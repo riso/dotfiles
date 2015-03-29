@@ -7,3 +7,5 @@
 	default = current
 [core]
 	excludesfile = /home/valerio/.gitignore_global
+[branch "master"]
+	rebase = true
