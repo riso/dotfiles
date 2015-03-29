@@ -58,6 +58,7 @@ map tt <c-]>
 map <c-b> :tprevious<CR>
 map <c-n> :tnext<CR>
 nmap <F8> :TagbarToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " The Silver Searcher
 if executable('ag')
