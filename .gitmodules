@@ -9,7 +9,7 @@
 	url = https://github.com/Shougo/neocomplete.vim
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
+	url = https://github.com/majutsushi/tagbar
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -45,13 +45,13 @@
 	url = https://github.com/Slava/vim-spacebars.git
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
-	url = git://github.com/rodjek/vim-puppet.git
+	url = https://github.com/rodjek/vim-puppet.git
 [submodule "tmux/plugins/tmux-yank"]
 	path = tmux/plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank
 [submodule "custom/plugins/zsh-syntax-highlighting"]
 	path = custom/plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
