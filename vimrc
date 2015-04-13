@@ -117,6 +117,8 @@ set ve=all
 set wrap
 set bs=2
 set autoread
+set ignorecase
+set smartcase
 
 map <F7> mzgg=G`z<CR>
 call togglebg#map("<F5>")
