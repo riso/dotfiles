@@ -90,4 +90,4 @@ fi
 
 eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)"
 
-alias="/usr/local/array_vpn/array_vpnc -hostname https://vpn.lon02.softlayer.com"
+alias slvpn="/usr/local/array_vpn/array_vpnc -hostname https://vpn.lon02.softlayer.com"
