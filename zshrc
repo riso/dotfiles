@@ -37,6 +37,9 @@ ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
 # we need to force 256 colors because gnome-terminal is reported as an 8 colors terminal
 ZSH_TMUX_FIXTERM_WITHOUT_256COLOR="screen-256color"
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 if [ `uname -o` = "Cygwin" ]
 then
 	ZSH_THEME="muse-custom-cygwin"
@@ -86,3 +89,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)"
+
+alias="/usr/local/array_vpn/array_vpnc -hostname https://vpn.lon02.softlayer.com"
