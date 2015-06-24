@@ -139,6 +139,9 @@ map <c-n> :tnext<CR>
 nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
+" Indent XML
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+
 " The Silver Searcher
 if executable('ag')
     " Use ag over grep
