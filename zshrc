@@ -53,7 +53,7 @@ else
 	ZSH_CUSTOM=$HOME/.dotfiles/custom
 	plugins=(git command-not-found common-aliases fasd meteor npm sudo zsh-syntax-highlighting svn-fast-info tmux)
 	source $ZSH/oh-my-zsh.sh
-	export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin"
+	export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin:/opt/flow"
 fi
 
 
