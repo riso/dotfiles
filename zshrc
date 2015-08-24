@@ -90,4 +90,5 @@ fi
 
 eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)"
 
-alias slvpn="/usr/local/array_vpn/array_vpnc -hostname https://vpn.lon02.softlayer.com"
+# Source shell script used to manage variables and configurations valid for this environment only
+source $HOME/bin/setenv.sh
