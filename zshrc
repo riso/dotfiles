@@ -32,7 +32,7 @@ export ZSH=$HOME/.oh-my-zsh
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
 # we need to force 256 colors because gnome-terminal is reported as an 8 colors terminal
 ZSH_TMUX_FIXTERM_WITHOUT_256COLOR="screen-256color"
@@ -49,7 +49,7 @@ then
 	source $ZSH/oh-my-zsh.sh
 	eval $(dircolors ~/.vim/dircolors.256dark)
 else
-	ZSH_THEME="muse-custom"
+	ZSH_THEME="agnoster"
 	ZSH_CUSTOM=$HOME/.dotfiles/custom
 	plugins=(git command-not-found common-aliases fasd meteor npm sudo zsh-syntax-highlighting svn-fast-info tmux)
 	source $ZSH/oh-my-zsh.sh
