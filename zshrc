@@ -36,6 +36,7 @@ ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_FIXTERM_WITH_256COLOR="screen-256color"
 # we need to force 256 colors because gnome-terminal is reported as an 8 colors terminal
 ZSH_TMUX_FIXTERM_WITHOUT_256COLOR="screen-256color"
+TERM=xterm-256color
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -47,15 +48,15 @@ then
 	plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux)
 	export SSH_AUTH_SOCK="/cygdrive/c/cygwin64/ssh-socket"
 	source $ZSH/oh-my-zsh.sh
-	eval $(dircolors ~/.vim/dircolors.256dark)
 else
-	ZSH_THEME="agnoster"
+	ZSH_THEME=""
 	ZSH_CUSTOM=$HOME/.dotfiles/custom
-	plugins=(git command-not-found common-aliases fasd meteor npm sudo zsh-syntax-highlighting svn-fast-info tmux)
+	plugins=(gitfast command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting)
 	source $ZSH/oh-my-zsh.sh
-	export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin:/opt/flow"
+	#export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin:/opt/flow"
 fi
 
+eval $(dircolors ~/.dotfiles/dircolors.256dark)
 
 
 
@@ -92,3 +93,7 @@ eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcom
 
 # Source shell script used to manage variables and configurations valid for this environment only
 source $HOME/bin/setenv.sh
+autoload -U promptinit; promptinit
+prompt pure
+# BASE16_SHELL=$HOME/.config/base16-shell/
+# [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

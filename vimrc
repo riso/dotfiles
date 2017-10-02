@@ -112,7 +112,9 @@ set cmdheight=2
 set shell=/bin/bash
 set hlsearch
 set background=dark
-colorscheme solarized
+let base16colorspace=256
+" colorscheme base16-tomorrow-night
+" colorscheme solarized
 set ve=all
 set wrap
 set bs=2

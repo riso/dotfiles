@@ -1,6 +1,6 @@
 [user]
 	email = valerio.ponte@gmail.com
-	name = Valerio Ponte
+	name = vponte
 [init]
 	templatedir = ~/.git_template
 [push]
@@ -9,3 +9,9 @@
 	excludesfile = /home/valerio/.gitignore_global
 [branch]
 	autosetuprebase = always
+[mergetool]
+	keepBackup = false
+[oh-my-zsh]
+	hide-dirty = 1
+[diff]
+	tool = vimdiff
