@@ -95,5 +95,8 @@ eval "$(fasd --init auto zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcom
 source $HOME/bin/setenv.sh
 autoload -U promptinit; promptinit
 prompt pure
+
 # BASE16_SHELL=$HOME/.config/base16-shell/
 # [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+PAGER="less -S"

@@ -9,6 +9,8 @@
 	excludesfile = /home/valerio/.gitignore_global
 [branch]
 	autosetuprebase = always
+[merge]
+	tool = vimdiff
 [mergetool]
 	keepBackup = false
 [oh-my-zsh]
