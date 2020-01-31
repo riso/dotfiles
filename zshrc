@@ -41,24 +41,12 @@ TERM=xterm-256color
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-if [ `uname -o` = "Cygwin" ]
-then
-	ZSH_THEME="muse-custom-cygwin"
-	ZSH_CUSTOM=$HOME/.vim/custom
-	plugins=(git command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting tmux)
-	export SSH_AUTH_SOCK="/cygdrive/c/cygwin64/ssh-socket"
-	source $ZSH/oh-my-zsh.sh
-else
-	ZSH_THEME=""
-	ZSH_CUSTOM=$HOME/.dotfiles/custom
-	plugins=(git gitfast command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting)
-	source $ZSH/oh-my-zsh.sh
-	#export PATH="/home/valerio/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/valerio/.arc_install/arcanist/bin:/opt/flow"
-fi
+ZSH_THEME=""
+ZSH_CUSTOM=$HOME/.dotfiles/custom
+plugins=(git gitfast command-not-found common-aliases fasd npm sudo zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
 
-eval $(dircolors ~/.dotfiles/dircolors.256dark)
-
-
+type dircolors &> /dev/null && eval $(dircolors ~/.dotfiles/dircolors.256dark)
 
 # User configuration
 
