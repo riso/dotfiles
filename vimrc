@@ -121,6 +121,7 @@ set bs=2
 set autoread
 set ignorecase
 set smartcase
+set rtp+=/usr/local/opt/fzf
 
 map <F7> mzgg=G`z<CR>
 call togglebg#map("<F5>")
@@ -141,6 +142,10 @@ map <c-n> :tnext<CR>
 nmap <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
+" use fzf over ctrlp
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-S-f> :Ag 
+
 " Indent XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
@@ -155,5 +160,6 @@ if executable('ag')
     " ag is fast enough that CtrlP doesn't need to cache
     let g:ctrlp_use_caching = 0
 endif
+
 
 autocmd VimResized * wincmd =
